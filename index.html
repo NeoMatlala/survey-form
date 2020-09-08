@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="style.css"> <!--stylesheet-->
+    <link href="https://fonts.googleapis.com/css2?family=Kufam&display=swap" rel="stylesheet"> <!--google font-->
+    <title>Survey Project</title>
+</head>
+<body>
+    <div id="title">
+        <h1 id="main-heading">freeCodeCamp Survey Form</h1>
+        <p id="description">
+            Thank you for taking the time to help us imporove the platform.
+        </p>
+    </div>
+
+    <div class="flex-items">
+        <form id="survey-form">
+            <div id="name-field">
+                <label for="name" id="name-label">Name</label><br>
+                <input type="text" name="name" required id="name" placeholder="Your name">
+            </div><br><br>
+    
+            <div id="email-field">
+                <label for="email" id="email-label">Email</label><br>
+                <input type="email" name="email" required id="email" placeholder="Your email">
+            </div><br><br>  
+    
+            <div id="age-field">
+                <label for="age" id="number-label">Age</label><br>
+                <input type="number" name="age" required id="age" placeholder="Your age" min="1" max="150" step="1">
+            </div><br><br>
+    
+            <div id="role-drop-down">
+                <label for="dropdown">Which option best describes your current role?</label><br>
+                <select name="dropdown" id="dropdown" required>
+                    <option value="" disabled selected hidden>Select current role</option>
+                    <option value="student" id="stu">Student</option>
+                    <option value="full time job">Full time job</option>
+                    <option value="learner full time">Full time learner</option>
+                    <option value="prefare not to say">Prefare not to say</option>
+                    <option value="other">Other</option>
+                </select>
+            </div><br><br>
+    
+            <div id="recommendation-radio-buttons">
+                Would you recommend freeCodeCamp to a friend?<br>
+                <input type="radio" name="recommendation" id="definitely" value="definitely">
+                <label for="definitely">Definitely</label><br>
+                
+                <input type="radio" name="recommendation" id="maybe" value="maybe">
+                <label for="maybe">Maybe</label><br>
+
+                <input type="radio" name="recommendation" id="no" value="no">
+                <label for="no">No</label><br>
+            </div><br><br>
+    
+            <div id="favorite-feature-drop-down">
+                <label for="feature">What is your favorite feature of freeCodeCamp?</label><br>
+                <select name="feature" id="feature" required>
+                    <option value="" disabled selected hidden>Select favorite feature</option>
+                    <option value="challenges">Challenges</option>
+                    <option value="projects">Projects</option>
+                    <option value="community">Community</option>
+                    <option value="open-Source">Open Source</option>
+                </select>
+            </div><br><br>
+    
+            <div id="improvements-checkboxes">
+                What would you like to see improved? Check all that apply<br>
+                
+                <input type="checkbox" name="fr-project" id="fr-project" value="front end projects">
+                <label for="fr-project">Front-end Projects</label><br>
+                
+                <input type="checkbox" name="be-project" id="be-project" value="be-project">
+                <label for="be-project">Back-end Projects</label><br>
+
+                <input type="checkbox" name="data-vis" id="data-vis" value="data-vis">
+                <label for="data-vis">Data Visualization</label><br>
+
+                <input type="checkbox" name="challenges" id="challenges" value="challenges">
+                <label for="challenges">Challenges</label><br>
+                
+                <input type="checkbox" name="os-community" id="os-community" value="os-community">
+                <label for="os-community">Open Source Community</label><br>
+
+                <input type="checkbox" name="gh-rooms" id="gh-rooms" value="gh-rooms">
+                <label for="gh-rooms">Gitter help rooms</label><br>
+
+                <input type="checkbox" name="videos" id="videos" value="videos">
+                <label for="videos">Videos</label><br>
+
+                <input type="checkbox" name="city-meetups" id="city-meetups" value="city-meetups">
+                <label for="city-meetups">City Meetups</label><br>
+                
+                <input type="checkbox" name="wiki" id="wiki" value="wiki">
+                <label for="wiki">Wiki</label><br>
+                
+                <input type="checkbox" name="forum" id="forum" value="forum">
+                <label for="forum">Forum</label><br>
+    
+                <input type="checkbox" name="addition-courses" id="addition-courses" value="addition-courses">
+                <label for="addition-courses">Additional Courses</label><br>
+            </div><br><br>
+    
+            <div id="textarea-comments">
+                <!--<label for="comments">Any comments you would like to add?</label><br>-->
+                <textarea name="comments" id="comments" cols="70" rows="10" placeholder="Comments"></textarea>
+            </div><br><br>
+    
+            <button type="submit" id="submit">Submit</button>
+        </form><br>
+    </div><br>
+    
+    
+    
+</body>

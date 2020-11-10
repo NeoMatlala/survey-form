@@ -1,91 +1,106 @@
 body {
     font-family: 'Kufam', cursive;
-    /*background-image: url(images/2.png);
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;*/
-    color: rgb(73, 206, 73);
-    height: 100vh;
-    background-color: rgb(56, 50, 50);
+    color: #000;
 }
 
+/* --- TITLE --- */
 #title {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /*border: 1px black solid;*/
+    text-align: center;
+}
+
+#span-purple{
+    color: rgb(161, 54, 161);
 }
 
 #main-heading {
-    /*border: 1px black solid;*/
-    flex: 1;
-    order: 1;
+    font-size: 3rem;
+    padding: 0;
+    letter-spacing: -0.3rem;
 }
 
 #description {
-    /*border: 1px black solid;*/
-    flex: 1;
-    order: 2;
+    margin-top: -2.5rem;
+    font-style: italic;
+    letter-spacing: -0.1rem;
 }
 
-/*-----------------------FORM-------------------------------------------------*/
-
-.flex-items {
-    height: 100vh;
+/* --- FORM --- */
+.form-container {
+    height: auto;
     display: flex;
-    /*flex-direction: column;*/
     justify-content: center;
     align-items: center;
-    margin-top: 300px;
     padding: 10px;
 }
 
 #survey-form {
-    /*border: 1px black solid;*/
-    width: 650px;
-    
+    width: 50%;
     padding: 30px;
-    border-radius: 5px;
-    /*background: rgba(0, 0, 0, 0.8);*/
+    border-radius: 1rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.13);
-    
 }
 
 #name, #email, #age, #comments {
-    width: 60%;
-    background: transparent;
+    width: 85%;
     border: 0;
-    border-bottom: 2px solid rgb(73, 206, 73);
-    padding: 15px;
-    color: rgb(73, 206, 73);
+    border-bottom: 2px solid #000;
+    padding: 0.3rem;
+    color: #000;
     font-size: 20px;
+}
+
+#age{
+    width: 10%;
 }
 
 #role-drop-down, #recommendation-radio-buttons, #favorite-feature-drop-down, #improvements-checkboxes {
-    color: rgb(73, 206, 73);
+    color: #000;
     background: transparent;
     font-size: 20px;
 }
 
-::-webkit-input-placeholder {
-    color: rgb(73, 206, 73);
-}
-
-::-moz-input-placeholder {
-    color: rgb(73, 206, 73);
-}
-
-::-ms-input-placeholder {
-    color: rgb(73, 206, 73);
-}
-
 #submit {
-    background: rgb(73, 206, 73);
+    background: purple/*rgb(73, 206, 73)*/;
     text-align: center;
     padding: 15px;
     border-radius: 5px;
     color: #fff;
     cursor: pointer;
     text-transform: uppercase;
+}
+
+/* --- FORM --- */
+
+/*iPad Pro (sreens 1024 and before iPad)*/
+@media only screen and (max-width: 1024px){
+
+    /*title*/
+    #main-heading {
+        font-size: 4.5rem;
+    }
+    
+    #description {
+        margin-top: -4rem;
+        font-size: 1.5rem;
+    }
+
+    #survey-form {
+        width: 70%;
+    }
+
+    #survey-form label{
+        font-size: 1.8rem;
+    }
+
+    #name, #email, #age, #comments {
+        font-size: 1.5rem;
+    }
+
+    #role-drop-down, #recommendation-radio-buttons, #favorite-feature-drop-down, #improvements-checkboxes {
+        font-size: 1.5rem;
+    }
+
+    #submit {
+        width: 90%;
+    }
 }

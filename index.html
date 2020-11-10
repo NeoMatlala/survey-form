@@ -2,35 +2,35 @@
 <head>
     <link rel="stylesheet" href="style.css"> <!--stylesheet-->
     <link href="https://fonts.googleapis.com/css2?family=Kufam&display=swap" rel="stylesheet"> <!--google font-->
-    <title>Survey Project</title>
+    <title>Survey Form | freeCodeCamp</title>
 </head>
 <body>
     <div id="title">
-        <h1 id="main-heading">freeCodeCamp Survey Form</h1>
+        <h1 id="main-heading">freeCodeCa<span id="span-purple">m</span>p  Survey  Form</h1>
         <p id="description">
-            Thank you for taking the time to help us imporove the platform.
+            Thank you for taking the time to help us improve our platform.
         </p>
     </div>
 
-    <div class="flex-items">
+    <div class="form-container">
         <form id="survey-form">
             <div id="name-field">
-                <label for="name" id="name-label">Name</label><br>
-                <input type="text" name="name" required id="name" placeholder="Your name">
+                <label for="name" id="name-label">N<span id="span-purple">a</span>me</label><br>
+                <input type="text" name="name" required id="name" placeholder="">
             </div><br><br>
     
             <div id="email-field">
-                <label for="email" id="email-label">Email</label><br>
-                <input type="email" name="email" required id="email" placeholder="Your email">
+                <label for="email" id="email-label">Ema<span id="span-purple">i</span>l</label><br>
+                <input type="email" name="email" required id="email" placeholder="">
             </div><br><br>  
     
             <div id="age-field">
-                <label for="age" id="number-label">Age</label><br>
-                <input type="number" name="age" required id="age" placeholder="Your age" min="1" max="150" step="1">
+                <label for="age" id="number-label">A<span id="span-purple">g</span>e</label><br>
+                <input type="number" name="age" required id="age" placeholder="" min="1" max="150" step="1">
             </div><br><br>
     
             <div id="role-drop-down">
-                <label for="dropdown">Which option best describes your current role?</label><br>
+                <label for="dropdown">Which <span id="span-purple">option</span> best describes your current role?</label><br>
                 <select name="dropdown" id="dropdown" required>
                     <option value="" disabled selected hidden>Select current role</option>
                     <option value="student" id="stu">Student</option>
@@ -42,7 +42,7 @@
             </div><br><br>
     
             <div id="recommendation-radio-buttons">
-                Would you recommend freeCodeCamp to a friend?<br>
+                Would you <span id="span-purple">recommend</span> freeCodeCamp to a friend?<br>
                 <input type="radio" name="recommendation" id="definitely" value="definitely">
                 <label for="definitely">Definitely</label><br>
                 
@@ -54,7 +54,7 @@
             </div><br><br>
     
             <div id="favorite-feature-drop-down">
-                <label for="feature">What is your favorite feature of freeCodeCamp?</label><br>
+                <label for="feature">What is your <span id="span-purple">favorite</span> feature of freeCodeCamp?</label><br>
                 <select name="feature" id="feature" required>
                     <option value="" disabled selected hidden>Select favorite feature</option>
                     <option value="challenges">Challenges</option>
@@ -65,7 +65,7 @@
             </div><br><br>
     
             <div id="improvements-checkboxes">
-                What would you like to see improved? Check all that apply<br>
+                What would you like to see <span id="span-purple">improved</span>? Check all that apply<br>
                 
                 <input type="checkbox" name="fr-project" id="fr-project" value="front end projects">
                 <label for="fr-project">Front-end Projects</label><br>
@@ -108,8 +108,5 @@
     
             <button type="submit" id="submit">Submit</button>
         </form><br>
-    </div><br>
-    
-    
-    
+    </div><br>   
 </body>

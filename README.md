@@ -2,4 +2,11 @@
 
 created this survey form using HTML5 and CSS3 for the freeCodecamp responsive web design online course.
 
-you may view the form live: https://neomatlala.github.io/survey-form/
+## What I have learned on this project
+
+- CSS3 box-shadow
+- Responsive web design, i.e. Media Queries 
+
+## See it live: 
+
+https://neomatlala.github.io/survey-form/

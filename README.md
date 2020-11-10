@@ -1,6 +1,6 @@
 # Survey Form
 
-created this survey form using HTML5 and CSS3 for the freeCodecamp responsive web design online course.
+Created this survey form using HTML5 and CSS3. This was one of the projects for *freeCodecamp's Responsive Web Design* online course.
 
 ## What I have learned on this project
 
